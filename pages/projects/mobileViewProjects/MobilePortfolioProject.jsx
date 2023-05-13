@@ -7,6 +7,7 @@ import framer from '../../../public/assets/skills/framer.png';
 import { descPortfolio, projectText } from '../../../utils/languageChangeProjects';
 import portfolioImg from '../../../public/assets/projects/portfolio.png'
 import { FaGithub } from 'react-icons/fa';
+import Link from 'next/link';
 
 const MobilePortfolioProject = () => {
     const lang = useSelector(state => state.lang.lang)
@@ -48,7 +49,8 @@ const MobilePortfolioProject = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
                 </svg>
               </div>
-              <button className='uppercase'>view</button>
+              <Link href='https://nickbel.vercel.app/'
+              className='uppercase'>view</Link>
             </div>
         </div>
     </div>
