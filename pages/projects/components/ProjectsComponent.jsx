@@ -27,26 +27,29 @@ const ProjectsComponent = () => {
 
   const title = {ru: 'Некоторые вещи, которые я создал', kr: '일부 내가 만든 것들', en: 'Some Things I’ve Built'}
   return (
-    <div id='projects' className='w-full lg:h-screen p-2 overflow-hidden'>
+    <div id='projects' className='w-full xl:h-screen p-2 overflow-hidden'>
       <div className='w-full mx-auto flex justify-center items-center h-full gap-10'>
-        <div className='flex w-full lg:w-[85%] justify-between h-full'>
-          <div className='h-full hidden lg:flex items-center'>
-           <LeftButton setProjectInView={setProjectInView} projectInView={projectInView}/>
+        <div className='flex w-full xl:w-[85%] justify-between h-full'>
+          <div className='h-full hidden xl:flex items-center'>
+            <LeftButton setProjectInView={setProjectInView} projectInView={projectInView}/>
           </div>
-          <div className='flex flex-col mt-20 gap-5 items-center md:items-start lg:px-5 w-full'>
+          <div className='flex flex-col mt-20 gap-5 items-center md:items-start xl:px-5 w-full'>
             <div className='ml-10'>
               <TextTitle title={title}/>
             </div>
               {windowWidth > 770 ? projects[projectInView] : <MobileProjectsView/>}
-              <div className='w-full justify-center hidden md:flex lg:hidden'>
+              <div className='w-full justify-center hidden md:flex xl:hidden'>
                 <div className='p-2 border-[1px] border-slate-200 rounded-full flex gap-5 hover:border-amber-200 duration-200'>
-                  <span className='ml-2 cursor-pointer hover:font-semibold hover:text-amber-400 duration-300'>1</span>
-                  <span className='border-x-[1px] px-3 border-slate-200 cursor-pointer hover:font-semibold hover:text-amber-400 duration-300'>2</span>
-                  <span className='mr-2 cursor-pointer hover:font-semibold hover:text-amber-400 duration-300'>3</span>
+                  <span onClick={() => setProjectInView(0)}
+                  className='ml-2 cursor-pointer hover:font-semibold hover:text-amber-400 duration-300'>1</span>
+                  <span onClick={() => setProjectInView(1)}
+                  className='border-x-[1px] px-3 border-slate-200 cursor-pointer hover:font-semibold hover:text-amber-400 duration-300'>2</span>
+                  <span onClick={() => setProjectInView(2)}
+                  className='mr-2 cursor-pointer hover:font-semibold hover:text-amber-400 duration-300'>3</span>
                 </div>
               </div>
           </div>
-          <div className='h-full hidden lg:flex items-center'>
+          <div className='h-full hidden xl:flex items-center'>
             <RightButton setProjectInView={setProjectInView} projectInView={projectInView}/>
           </div>
         </div>
