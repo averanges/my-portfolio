@@ -37,11 +37,12 @@ const ContactComponent = () => {
         values,
         process.env.NEXT_PUBLIC_EMAILJS_USER_ID
       );
+      setValues({ name: '', email: '', message: ''})
     } catch (err) {
       const validationErrors = {};
-      err.inner.forEach((error) => {
+      {err && err.inner.forEach((error) => {
         validationErrors[error.path] = error.message;
-      });
+      });}
       setErrors(validationErrors);
     }
   };
