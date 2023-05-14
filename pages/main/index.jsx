@@ -38,7 +38,7 @@ const Main = () => {
               </div>
             </a>
             <a
-              href='https://github.com/fireclint'
+              href='https://github.com/averanges'
               target='_blank'
               rel='noreferrer'
             >
@@ -46,7 +46,7 @@ const Main = () => {
                 <FaGithub />
               </div>
             </a>
-            <Link href='/#contact'>
+            <Link href='/contact'>
               <div className='rounded-full shadow-lg shadow-gray-400 hover:bg-amber-200 hover:shadow-amber-500 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                 <AiOutlineMail />
               </div>
