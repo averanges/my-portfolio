@@ -9,7 +9,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useSelector } from 'react-redux';
 import { descChat, projectText } from '../../../utils/languageChangeProjects';
-import Chat from '../../../public/assets/projects/chat1.png'
+import Chat from '../../../public/assets/projects/chat.png'
 import Link from 'next/link';
 
 const ChatProject = () => {

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import Chat from '../../../public/assets/projects/chat1.png'
+import Chat from '../../../public/assets/projects/chat.png'
 import { useSelector } from 'react-redux'
 import ReactImg from '../../../public/assets/skills/react.png';
 import Tailwind from '../../../public/assets/skills/tailwind.png';
