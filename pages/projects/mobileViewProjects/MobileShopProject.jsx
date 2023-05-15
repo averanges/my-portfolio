@@ -26,21 +26,20 @@ const MobileShopProject = () => {
             </div>
             <h2>Tamkar Beauty</h2>
             <div className='flex gap-3'>
-                  <div className='flex gap-2'>
-                    <Image src={ReactImg} width={30} height={20} alt='react'/>
-                    <p className='text-lg'>React</p>
+                  <div className='flex gap-2 items-center'>
+                    <Image src={ReactImg} width={35} height={20} alt='react'/>
+                    <p className='text-sm'>React</p>
                   </div>
-                  <div className='flex gap-2'>
-                    <Image src={Tailwind} width={30} height={20} alt='tailwind'/>
-                    <p className='text-lg'>Tailwind</p>
+                  <div className='flex gap-2 items-center'>
+                    <Image src={Tailwind} width={25} height={20} alt='tailwind'/>
+                    <p className='text-sm'>Tailwind</p>
                   </div>
-                  <div className='flex gap-2'>
-                    <Image src={node} width={30} height={20} alt='node'/>
-                    <p className='text-lg'>Node</p>
+                  <div className='flex gap-2 items-center'>
+                    <Image src={node} width={25} height={20} alt='node'/>
+                    <p className='text-sm'>Node</p>
                   </div>
-                  <div className='flex gap-2'>
+                  <div className='items-center'>
                     <Image src={express} width={100} height={30} alt='express'/>
-                    <p className='text-lg'></p>
                   </div>
               </div>
             <p className='text-sm'>{descShop[lang]}</p>
@@ -48,7 +47,7 @@ const MobileShopProject = () => {
         <div className='w-full flex justify-end gap-5 '>
           <div className='flex gap-2 items-center'>
             <FaGithub />
-            <button>GIT</button>
+            <Link href='https://github.com/averanges/tamkar-shop'>GIT</Link>
           </div>
             <div className='flex gap-2 items-center cursor-pointer'>
               <div className=''>

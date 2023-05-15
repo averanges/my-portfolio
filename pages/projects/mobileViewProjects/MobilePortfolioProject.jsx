@@ -23,17 +23,17 @@ const MobilePortfolioProject = () => {
             </div>
             <h2>Portfolio Project</h2>
             <div className='flex gap-3'>
-                  <div className='flex gap-2'>
-                    <Image src={next} width={30} height={20} alt='next'/>
-                    <p className='text-lg'>Next</p>
+                  <div className='flex gap-2 items-center'>
+                    <Image src={next} width={25} height={10} alt='next'/>
+                    <p className='text-sm'>Next</p>
                   </div>
-                  <div className='flex gap-2'>
-                    <Image src={Tailwind} width={30} height={20} alt='taiwind'/>
-                    <p className='text-lg'>Tailwind</p>
+                  <div className='flex gap-2 items-center'>
+                    <Image src={Tailwind} width={25} height={20} alt='taiwind'/>
+                    <p className='text-sm'>Tailwind</p>
                   </div>
-                  <div className='flex gap-2'>
-                    <Image src={framer} width={30} height={20} alt='framer'/>
-                    <p className='text-lg'>Framer Motion</p>
+                  <div className='flex gap-2 items-center'>
+                    <Image src={framer} width={40} height={20} alt='framer'/>
+                    <p className='text-sm'>Framer Motion</p>
                   </div>
               </div>
             <p className='text-sm'>{descPortfolio[lang]}</p>
@@ -41,7 +41,7 @@ const MobilePortfolioProject = () => {
         <div className='w-full flex justify-end gap-5 '>
           <div className='flex gap-2 items-center'>
             <FaGithub />
-            <button>GIT</button>
+            <Link href='https://github.com/averanges/my-portfolio'>GIT</Link>
           </div>
             <div className='flex gap-2 items-center cursor-pointer'>
               <div className=''>

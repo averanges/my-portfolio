@@ -26,19 +26,19 @@ const MobileChatProject = () => {
             </div>
             <h2>Bubble Chat</h2>
             <div className='flex gap-3 w-full justify-center'>
-                  <div className='flex gap-2'>
-                    <Image src={ReactImg} width={30} height={20} alt='react'/>
+                  <div className='flex gap-2 items-center'>
+                    <Image src={ReactImg} width={35} height={20} alt='react'/>
                     <p className='text-sm md:text-lg '>React</p>
                   </div>
-                  <div className='flex gap-2'>
-                    <Image src={Tailwind} width={30} height={20} alt='tailwind'/>
+                  <div className='flex gap-2 items-center'>
+                    <Image src={Tailwind} width={25} height={20} alt='tailwind'/>
                     <p className='text-sm md:text-lg '>Tailwind</p>
                   </div>
-                  <div className='flex gap-2'>
-                    <Image src={node} width={30} height={20} alt='node'/>
+                  <div className='flex gap-2 items-center'>
+                    <Image src={node} width={25} height={20} alt='node'/>
                     <p className='text-sm md:text-lg '>Node</p>
                   </div>
-                  <div className='flex gap-2'>
+                  <div className='flex gap-2 items-center'>
                     <Image src={socket} width={30} height={20} alt='socket'/>
                     <p className='text-sm md:text-lg '>Socket.io</p>
                   </div>
@@ -48,7 +48,7 @@ const MobileChatProject = () => {
         <div className='w-full flex justify-end gap-5 '>
           <div className='flex gap-2 items-center'>
             <FaGithub />
-            <button>GIT</button>
+            <Link href='https://github.com/averanges/bubble-chat'>GIT</Link>
           </div>
             <div className='flex gap-2 items-center cursor-pointer'>
               <div className=''>
@@ -56,7 +56,7 @@ const MobileChatProject = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
                 </svg>
               </div>
-              <Link href='https://bubble-chat-h1bd.onrender.com'
+              <Link href='https://bubble-talks.vercel.app'
               className='uppercase'>view</Link>
             </div>
         </div>

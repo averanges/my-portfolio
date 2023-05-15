@@ -32,22 +32,22 @@ const PortfolioProject = () => {
                   <div className='w-full h-full bg-red-500 absolute top-0 -z-10 shadow-2xl shadow-slate-400'>2</div>
                 </div>
                 <div className='flex gap-3'>
-                  <div className='flex gap-2'>
-                    <Image src={next} width={30} height={20} alt='next'/>
-                    <p className='text-lg'>Next</p>
+                  <div className='flex gap-2 items-center'>
+                    <Image src={next} width={25} height={10} alt='next'/>
+                    <p className='text-md'>Next</p>
                   </div>
-                  <div className='flex gap-2'>
+                  <div className='flex gap-2 items-center'>
                     <Image src={Tailwind} width={30} height={20} alt='taiwlind'/>
-                    <p className='text-lg'>Tailwind</p>
+                    <p className='text-md'>Tailwind</p>
                   </div>
-                  <div className='flex gap-2'>
-                    <Image src={framer} width={30} height={20} alt='framer'/>
-                    <p className='text-lg'>Framer Motion</p>
+                  <div className='flex gap-2 items-center'>
+                    <Image src={framer} width={40} height={20} alt='framer'/>
+                    <p className='text-md'>Framer Motion</p>
                   </div>
                 </div>
                 <div className='flex gap-5'>
                   <a
-                      href='https://github.com/fireclint'
+                      href='https://github.com/averanges/my-portfolio'
                       target='_blank'
                       rel='noreferrer'
                     >

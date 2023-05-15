@@ -33,26 +33,26 @@ const ChatProject = () => {
                   <div className='w-full h-full  absolute top-0 -z-10 shadow-2xl shadow-slate-300'/>
                 </div>
                 <div className='flex gap-3 w-full md:w-fit'>
-                  <div className='flex gap-2'>
-                    <Image src={ReactImg} width={30} height={20} alt='react'/>
-                    <p className='text-sm md:text-lg '>React</p>
+                  <div className='flex gap-2 items-center'>
+                    <Image src={ReactImg} width={35} height={20} alt='react'/>
+                    <p className='text-sm md:text-md'>React</p>
                   </div>
-                  <div className='flex gap-2'>
-                    <Image src={Tailwind} width={30} height={20} alt='tailwind'/>
-                    <p className='text-sm md:text-lg '>Tailwind</p>
+                  <div className='flex gap-2 items-center'>
+                    <Image src={Tailwind} width={25} height={20} alt='tailwind'/>
+                    <p className='text-sm md:text-md'>Tailwind</p>
                   </div>
-                  <div className='flex gap-2'>
-                    <Image src={node} width={30} height={20} alt='node'/>
-                    <p className='text-sm md:text-lg '>Node</p>
+                  <div className='flex gap-2 items-center'>
+                    <Image src={node} width={25} height={20} alt='node'/>
+                    <p className='text-sm md:text-md '>Node</p>
                   </div>
-                  <div className='flex gap-2'>
+                  <div className='flex gap-2 items-center'>
                     <Image src={socket} width={30} height={20} alt='socket'/>
-                    <p className='text-sm md:text-lg '>Socket.io</p>
+                    <p className='text-sm md:text-md'>Socket.io</p>
                   </div>
                 </div>
                 <div className='flex gap-5'>
                   <a
-                      href='https://github.com/fireclint'
+                      href='https://github.com/averanges/bubble-chat'
                       target='_blank'
                       rel='noreferrer'
                     >
@@ -60,7 +60,7 @@ const ChatProject = () => {
                         <FaGithub />
                       </div>
                     </a>
-                    <Link href='https://bubble-chat-h1bd.onrender.com'
+                    <Link href='https://bubble-talks.vercel.app'
                     className='rounded-full shadow-lg shadow-gray-400 hover:bg-amber-200 hover:shadow-amber-500 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-4 h-4">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
