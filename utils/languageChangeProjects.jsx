@@ -14,7 +14,7 @@ export const descShop = {
     ru: 'Это интернет-магазин, построенный с использованием React, Tailwind CSS, Node.js, Express и MongoDB. В нём представлены различные косметические продукты для продажи, а также имеется корзина покупок и интеграция платежных систем. Приложение обеспечивает безопасный и удобный опыт онлайн-шопинга для клиентов.'
   }
 export const descPortfolio = {
-  en: 'I built a portfolio website using Next.js, Tailwind CSS, and Framer Motion to showcase my skills and projects as a web developer. It was really fun to design the interface using Tailwind CSS, and Framer Motion made the site look really cool with all the animations. With Next.js, the site is really fast and responsive, and I`m proud to show it off to potential clients and employers',
+  en: 'I built a portfolio website using Next.js, Tailwind CSS, and Framer Motion to showcase my skills and projects as a web developer. It was really fun to design the interface using Tailwind CSS, and Framer Motion made the site look really cool with all the animations. With Next.js, the site is really fast and responsive, and I`m proud to show it off to potential clients and employers.',
   kr: '저는 웹 개발자로서 제 스킬과 프로젝트를 보여주기 위해 Next.js, Tailwind CSS, 그리고 Framer Motion을 이용하여 포트폴리오 웹사이트를 만들었습니다. Tailwind CSS를 이용하여 인터페이스를 디자인하는 것은 정말 재미있었고, Framer Motion을 사용하여 모션 효과를 적용하여 사이트가 멋지게 보이게 만들었습니다. Next.js를 사용하였기 때문에 사이트는 매우 빠르고 반응이 좋으며, 잠재적인 고객과 고용주에게 자랑스러운 사이트를 보여줄 수 있습니다.',
   ru: 'Я создал сайт-портфолио с использованием Next.js, Tailwind CSS и Framer Motion, чтобы продемонстрировать мои навыки и проекты веб-разработки. Было очень интересно создавать интерфейс с помощью Tailwind CSS, а благодаря Framer Motion сайт выглядит очень круто с анимациями.'
 }
