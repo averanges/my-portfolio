@@ -1,4 +1,4 @@
-# John Doe's Portfolio
+# Nick Belichenko's Portfolio
 
 ![Portfolio Screenshot](https://github.com/averanges/screenshots/blob/main/main.png)
 
@@ -8,15 +8,15 @@ Welcome to my personal portfolio! I've built this portfolio website using Next.j
 
 ## Demo
 
-Check out the live demo: [Nick Belichenko's Portfolio](nickbel.vercel.app)
+Check out the live demo: [Nick Belichenko's Portfolio](https://nickbel.vercel.app/)
 
 ## Screenshots
 
-![Home Section](screenshots/home.png)
+![Home Section](https://github.com/averanges/screenshots/blob/main/main.png)
 
-![Projects Section](screenshots/projects.png)
+![Projects Section](https://github.com/averanges/screenshots/blob/main/projects.png)
 
-![Contact Section](screenshots/contact.png)
+![Contact Section](https://github.com/averanges/screenshots/blob/main/contact.png)
 
 ## Technologies Used
 
