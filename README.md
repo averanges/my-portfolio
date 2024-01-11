@@ -1,6 +1,6 @@
 # Nick Belichenko's Portfolio
 
-![Portfolio Screenshot](https://github.com/averanges/screenshots/blob/main/main.png)
+![Portfolio Screenshot](https://add.pics/JLABQU)
 
 ## Overview
 
@@ -11,8 +11,6 @@ Welcome to my personal portfolio! I've built this portfolio website using Next.j
 Check out the live demo: [Nick Belichenko's Portfolio](https://nickbel.vercel.app/)
 
 ## Screenshots
-
-![Home Section](https://github.com/averanges/screenshots/blob/main/main.png)
 
 ![Projects Section](https://github.com/averanges/screenshots/blob/main/projects.png)
 
