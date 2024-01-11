@@ -1,6 +1,6 @@
 # Nick Belichenko's Portfolio
 
-![Portfolio Screenshot](https://add.pics/JLABQU)
+![Portfolio Screenshot](https://add.pics/images/2024/01/10/main.png)
 
 ## Overview
 
