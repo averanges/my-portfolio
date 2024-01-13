@@ -57,11 +57,12 @@ const Navbar = () => {
         <div>
           <ul style={{ color: `${linkColor}` }} className='hidden md:flex gap-10 items-center'>
             <Navlinks/>
-            <button className="relative px-4 py-2 bg-gradient-to-r from-amber-300 via-amber-300 to-yellow-500 font-medium
+            <Link href='resume'
+             className="relative px-4 py-2 bg-gradient-to-r from-amber-300 via-amber-300 to-yellow-500 font-medium rounded-xl
              text-white transition-all duration-500 border-b-4 border-transparent hover:border-white shadow-md hover:shadow-xl shadow-slate-400">
               {resume[lang]}
               <span className="absolute bottom-0 left-0 w-full h-1 transition-all duration-500 transform scale-x-0"></span>
-            </button>
+            </Link>
           </ul>
           <div
             style={{ color: `${linkColor}` }}

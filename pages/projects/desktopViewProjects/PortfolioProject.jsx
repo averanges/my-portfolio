@@ -17,10 +17,10 @@ const PortfolioProject = () => {
   return (
     <motion.div initial={{opacity:0}} animate={{opacity: 1}} transition={{duration: 2}}
     className='w-full h-full flex flex-col items-center gap-10'>
-            <div className='w-[90%] h-full p-16 flex relative justify-end '>
+            <div className='w-[90%] h-full p-16 flex relative justify-end rounded-3xl'>
               <div>
-              <Card source={portfolioImg} alt='portfolio'/>
-              <div className='w-[60%] h-[55%] shadow-xl shadow-slate-400 absolute left-0 -z-10'></div>
+                <Card source={portfolioImg} alt='portfolio'/>
+                <div className='w-[60%] h-[55%] shadow-lg shadow-slate-400 absolute left-0 -z-10'/>
               </div>
               <div className='flex justify-start flex-col items-end gap-5 w-[60%]'>
                   <p className='uppercase relative tracking-widest after:bg-amber-300 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-10'>{projectText[lang]}</p>

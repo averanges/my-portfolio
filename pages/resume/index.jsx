@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import ContactComponent from './components/ContactComponent';
+import MyPDFViewer from './components/MyPDFViewer';
 
-const Contact = () => {
+const Projects = () => {
   return   (
     <div>
     <Head>
@@ -9,9 +9,9 @@ const Contact = () => {
       <meta name="description" content="I’m a front-end web developer specializing in building (and occasionally designing) exceptional digital experiences." />
       <link rel="icon" href="/logoNew.png" />
     </Head>
-    <ContactComponent />
+    <MyPDFViewer />
   </div>
   );
 };
 
-export default Contact;
+export default Projects;

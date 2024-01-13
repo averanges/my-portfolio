@@ -1,43 +1,39 @@
-import { useState } from "react";
-import { GoogleMap, Marker } from "@react-google-maps/api";
-import { useEffect } from "react";
-import { useJsApiLoader } from "@react-google-maps/api";
+import React from "react";
+import dynamic from "next/dynamic";
+import "leaflet/dist/leaflet.css";
 
-const Map = () => {
-  const mapContainerStyle = {
-    height: "100%",
-    width: "100%",
-  };
+const MapContainer = dynamic(
+  () => import("react-leaflet").then((module) => module.MapContainer),
+  {
+    ssr: false,
+  }
+);
+const TileLayer = dynamic(
+  () => import("react-leaflet").then((module) => module.TileLayer),
+  {
+    ssr: false,
+  }
+);
+const Popup = dynamic(
+  () => import("react-leaflet").then((module) => module.Popup),
+  {
+    ssr: false,
+  }
+)
 
-  const center = {
-    lat: 37.642085,
-    lng: 127.207705,
-  };
-
-  const [mapsLoaded, setMapsLoaded] = useState(false);
-
-  const { isLoaded } = useJsApiLoader({
-    id: "google-map-script",
-    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
-  });
-
-  useEffect(() => {
-    if (isLoaded) {
-      setMapsLoaded(true);
-    }
-  }, [isLoaded]);
-
-  return isLoaded && mapsLoaded ? (
-    <GoogleMap
-      mapContainerStyle={mapContainerStyle}
-      center={center}
-      zoom={10}
+const MapComponent = () => {
+  return (
+    <MapContainer
+      center={[37.6401, 127.2150]}
+      zoom={8}
+      style={{ width: "100%", height: "91%" }}
     >
-      <Marker
-        position={{ lat: center.lat, lng: center.lng }}
+      <TileLayer
+        url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
+        attribution='&copy;OpenStreetMap, &copy;CartoDB'
       />
-    </GoogleMap>
-  ) : null;
+    </MapContainer>
+  );
 };
 
-export default Map;
+export default MapComponent;

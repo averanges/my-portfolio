@@ -21,7 +21,7 @@ const ShopProject = () => {
             <div className='w-[90%] h-full p-16 flex relative justify-end '>
               <div>
               <Card source={tamkar} alt='tamkar'/>
-              <div className='w-[60%] h-[55%] shadow-xl shadow-slate-400 absolute left-0 -z-10'></div>
+              <div className='w-[60%] h-[55%] shadow-lg shadow-slate-400 absolute left-0 -z-10'></div>
               </div>
               <div className='flex justify-start flex-col items-end gap-5 w-[60%]'>
                   <p className='uppercase relative tracking-widest after:bg-amber-300 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-10'>{projectText[lang]}</p>

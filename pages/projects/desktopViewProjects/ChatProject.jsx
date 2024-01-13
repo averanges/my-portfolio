@@ -21,10 +21,11 @@ const ChatProject = () => {
             <div className='w-full md:w-[90%] h-full p-5 md:p-16 flex relative justify-end flex-col md:flex-row'>
               <div>
                 <Card source={Chat} alt='chat'/>
-                <div className='w-full md:w-[60%] h-[55%] shadow-xl shadow-slate-300 absolute left-0 -z-20'/>
+                <div className='w-full md:w-[60%] h-[55%] shadow-lg shadow-slate-400 absolute left-0 -z-20'/>
               </div>
               <div className='flex justify-start flex-col items-end md:gap-5 w-full md:w-[60%]'>
-                  <p className='text-sm uppercase relative tracking-widest after:bg-amber-300 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-10'>{projectText[lang]}</p>
+                  <p className='text-sm uppercase relative tracking-widest after:bg-amber-300 after:absolute 
+                  after:-bottom-1 after:left-0 after:h-[2px] after:w-10'>{projectText[lang]}</p>
                 <h2 className='z-10'>Bubble Chat</h2>
                 <div className='md:bg-white shadow-2xl relative shadow-slate-200 w-full'>
                   <div className='h-full p-5 md:border-[1px] border-slate-300' >

@@ -12,9 +12,9 @@ Check out the live demo: [Nick Belichenko's Portfolio](https://nickbel.vercel.ap
 
 ## Screenshots
 
-![Projects Section](https://github.com/averanges/screenshots/blob/main/projects.png)
+![Projects Section](https://add.pics/images/2024/01/10/projects.png)
 
-![Contact Section](https://github.com/averanges/screenshots/blob/main/contact.png)
+![Contact Section](https://add.pics/images/2024/01/10/contact.png)
 
 ## Technologies Used
 

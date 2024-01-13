@@ -20,12 +20,12 @@ function MyApp({ Component, pageProps }) {
 
   const handleAnimationComplete = () => {
     router.push(location);
-  };
+  }
   return (
     <Provider store={store}>
       <AnimatedPage key={location} onClose={handleCloseScreen} onAnimationComplete={handleAnimationComplete} duration={0.6}/>
         <motion.div key={`motion-div-${location}`} initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: 1}}>
-          <Navbar />
+         {location !== "/resume" ? <Navbar /> : null}
           <Component {...pageProps} />
         </motion.div>
     </Provider>

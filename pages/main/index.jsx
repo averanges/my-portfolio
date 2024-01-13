@@ -13,6 +13,7 @@ import useGetText from './hooks/useGetText';
 const Main = () => {
   const lang = useSelector(state => state.lang.lang)
   const sentences = useGetText()
+  
   return (
     <div id='home' className='w-full h-screen text-center lg:text-left'>
       <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center '>

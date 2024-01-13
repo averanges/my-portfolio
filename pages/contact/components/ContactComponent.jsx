@@ -14,42 +14,49 @@ const ContactComponent = () => {
     email: false,
     message: false
   })
+
   const [values, setValues] = useState({
     name: '',
     email: '',
     message: ''
   })
+
   const handleInputValues = (e) => {
     const {value, id} = e.target
     setValues(prevValues => ({...prevValues, [id]: value}))
   }
+
   const validtion = Yup.object().shape({
     name: Yup.string().required('Please, provide you name.'),
     email: Yup.string().email('Valid email is required.').required('Please, provide your email address.'),
     message: Yup.string().required('Please, write your message.')
   })
+
   const handleSubmit = async () => {
     try {
       await validtion.validate(values, { abortEarly: false });
-      await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-        values,
-        process.env.NEXT_PUBLIC_EMAILJS_USER_ID
-      );
+        await emailjs.send(
+          process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+          process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+          values,
+          process.env.NEXT_PUBLIC_EMAILJS_USER_ID
+        );
       setValues({ name: '', email: '', message: ''})
     } catch (err) {
       const validationErrors = {};
-      {err && err.inner.forEach((error) => {
+      {err && err?.inner?.forEach((error) => {
         validationErrors[error.path] = error.message;
       });}
       setErrors(validationErrors);
+      console.log(err)
     }
-  };
+  }
+  // nLtH7BesUFoIZn85G
   const handleSubmitForm = async (e) => {
     e.preventDefault();
     handleSubmit()
-  };
+  }
+
   return (
     <div id='contact' className='w-screen h-screen'>
       <div className='m-auto w-full h-full flex flex-col md:flex-row md:h-[90%] justify-center items-center gap-10 md:gap-0'>
@@ -97,12 +104,14 @@ const ContactComponent = () => {
               </div>
               <div className='w-full flex justify-end'>
                 <button type='submit' 
-                className='border-[1px] text-amber-400 shadow-inner rounded-none border-amber-400 p-2 md:p-3 duration-500 hover:shadow-sm hover:shadow-amber-300'>{messageButtonText[lang]}</button>
+                className='border-[1px] text-amber-400 shadow-inner rounded-none border-amber-400 p-2 md:p-3 duration-500 hover:shadow-sm hover:shadow-amber-300'>
+                  {messageButtonText[lang]}
+                </button>
               </div>
             </form>
         </div>
           </div>
-        <div className='flex-1 h-full bg-black w-full '>
+        <div className='flex-1 h-full w-full bg-black justify-end items-end flex'>
           <Map/>
         </div>
       </div>
