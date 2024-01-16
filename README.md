@@ -8,7 +8,7 @@ Welcome to my personal portfolio! I've built this portfolio website using Next.j
 
 ## Demo
 
-Check out the live demo: [Nick Belichenko's Portfolio](https://nickbel.vercel.app/)
+Check out the live demo: [Nick Belichenko's Portfolio](https://nickbel.vercel.app/login)
 
 ## Screenshots
 
