@@ -9,10 +9,10 @@ import node from "../../../public/assets/skills/node.png"
 import express from "../../../public/assets/skills/express.png"
 import mongo from "../../../public/assets/skills/mongo.png"
 import socket from "../../../public/assets/skills/socket.png"
-import { chatProjectImageData } from '../consts/ImagesData';
-import { chatProjectFeaturesData, shopProjectFeaturesData } from '../consts/FeatureData';
+import { chatProjectImageData } from '../../../utils/consts/ImagesData';
+import { chatProjectFeaturesData } from '../../../utils/consts/FeatureData';
 import { useSelector } from 'react-redux';
-import { blockTitles, chatProjectSubDescr, extraData, shopProjectSubDescr, techStackSubTitles } from '@/utils/languageChangeProjectDetails';
+import { blockTitles, chatProjectSubDescr, extraData, techStackSubTitles } from '@/utils/languageChangeProjectDetails';
 
 const ChatProjectDetails = () => {
     const lang = useSelector(state => state.lang.lang)

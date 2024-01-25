@@ -8,8 +8,8 @@ import reactQuery from "../../../public/assets/skills/reactQuery.png"
 import node from "../../../public/assets/skills/node.png"
 import express from "../../../public/assets/skills/express.png"
 import mongo from "../../../public/assets/skills/mongo.png"
-import { shopProjectImageData } from '../consts/ImagesData';
-import { shopProjectFeaturesData } from '../consts/FeatureData';
+import { shopProjectImageData } from '../../../utils/consts/ImagesData';
+import { shopProjectFeaturesData } from '../../../utils/consts/FeatureData';
 import { useSelector } from 'react-redux';
 import { blockTitles, extraData, shopProjectSubDescr, techStackSubTitles } from '@/utils/languageChangeProjectDetails';
 

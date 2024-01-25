@@ -8,7 +8,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import portfolioImg from '../../../public/assets/projects/StarterPage.png'
 import { useSelector } from 'react-redux';
-import { descDataStorage, descPortfolio, projectText } from '../../../utils/languageChangeProjects';
+import { descDataStorage, projectText } from '../../../utils/languageChangeProjects';
 import Link from 'next/link';
 
 const DataStorageProject = () => {

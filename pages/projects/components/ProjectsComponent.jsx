@@ -9,9 +9,6 @@ import MobileProjectsView from '../mobileViewProjects/MobileProjectsView';
 import LeftButton from '../ui/LeftButton';
 import RightButton from '../ui/RightButton';
 import DataStorageProject from '../desktopViewProjects/DataStorageProject';
-import ShopProjectDetails from '../projectDetails/ShopProjectDetails';
-import ChatProjectDetails from '../projectDetails/ChatProjectDetails';
-import PortfolioProjectDetails from '../projectDetails/PortfolioProjectDetails';
 import DataStorageProjectDetails from '../projectDetails/DataStorageProjectDetails';
 
 const ProjectsComponent = () => { 

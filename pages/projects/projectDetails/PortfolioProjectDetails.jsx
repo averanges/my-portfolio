@@ -5,8 +5,8 @@ import tailwind from "../../../public/assets/skills/tailwind.png"
 import redux from "../../../public/assets/skills/redux.png"
 import next from "../../../public/assets/skills/nextjs.png"
 import framer from "../../../public/assets/skills/framer.png"
-import { chatProjectImageData, portfolioProjectImageData } from '../consts/ImagesData';
-import { chatProjectFeaturesData, portfolioProjectFeaturesData, shopProjectFeaturesData } from '../consts/FeatureData';
+import { chatProjectImageData, portfolioProjectImageData } from '../../../utils/consts/ImagesData';
+import { chatProjectFeaturesData, portfolioProjectFeaturesData, shopProjectFeaturesData } from '../../../utils/consts/FeatureData';
 import { useSelector } from 'react-redux';
 import { blockTitles, chatProjectSubDescr, extraData, portfolioProjectSubDescr, shopProjectSubDescr, techStackSubTitles } from '@/utils/languageChangeProjectDetails';
 

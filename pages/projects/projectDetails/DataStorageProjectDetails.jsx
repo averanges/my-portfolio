@@ -10,8 +10,8 @@ import express from "../../../public/assets/skills/express.png"
 import firebase from "../../../public/assets/skills/firebase.png"
 import socket from "../../../public/assets/skills/socket.png"
 import typescript from "../../../public/assets/skills/typescript.png"
-import { chatProjectImageData, dataStorageProjectImageData } from '../consts/ImagesData';
-import { chatProjectFeaturesData, dataStorageProjectFeaturesData, shopProjectFeaturesData } from '../consts/FeatureData';
+import { chatProjectImageData, dataStorageProjectImageData } from '../../../utils/consts/ImagesData';
+import { chatProjectFeaturesData, dataStorageProjectFeaturesData, shopProjectFeaturesData } from '../../../utils/consts/FeatureData';
 import { useSelector } from 'react-redux';
 import { blockTitles, chatProjectSubDescr, dataStorageProjectSubDescr, extraData, shopProjectSubDescr, techStackSubTitles } from '@/utils/languageChangeProjectDetails';
 
