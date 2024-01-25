@@ -18,3 +18,8 @@ export const descPortfolio = {
   kr: '저는 웹 개발자로서 제 스킬과 프로젝트를 보여주기 위해 Next.js, Tailwind CSS, 그리고 Framer Motion을 이용하여 포트폴리오 웹사이트를 만들었습니다. Tailwind CSS를 이용하여 인터페이스를 디자인하는 것은 정말 재미있었고, Framer Motion을 사용하여 모션 효과를 적용하여 사이트가 멋지게 보이게 만들었습니다. Next.js를 사용하였기 때문에 사이트는 매우 빠르고 반응이 좋으며, 잠재적인 고객과 고용주에게 자랑스러운 사이트를 보여줄 수 있습니다.',
   ru: 'Я создал сайт-портфолио с использованием Next.js, Tailwind CSS и Framer Motion, чтобы продемонстрировать мои навыки и проекты веб-разработки. Было очень интересно создавать интерфейс с помощью Tailwind CSS, а благодаря Framer Motion сайт выглядит очень круто с анимациями.'
 }
+export const descDataStorage = {
+  en: 'Data Storage System that allows efficiently manage your files with our user-friendly platform, featuring a comprehensive dashboard for storage statistics and a built-in audio player.',
+  kr: "파일을 효율적으로 관리할 수 있는 사용자 친화적인 플랫폼을 통해 파일을 효율적으로 관리할 수 있는 데이터 저장 시스템. 저장 통계용 종합 대시보드와 내장 오디오 플레이어를 갖추고 있습니다.",
+  ru: "Система хранения данных, которая позволяет эффективно управлять вашими файлами с помощью нашей удобной для пользователя платформы, предлагающей подробную статистику на панели управления и встроенный аудиоплеер.",
+};

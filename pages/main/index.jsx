@@ -52,7 +52,7 @@ const Main = () => {
                 <AiOutlineMail />
               </div>
             </Link>
-            <Link href='/resume'>
+            <Link href='https://open-dawn-7be.notion.site/Nikolai-Belichenko-427b3e525b0444a780070a40e151729a?pvs=4'>
               <div className='rounded-full shadow-lg shadow-gray-400 hover:bg-amber-200 hover:shadow-amber-500 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                 <BsFillPersonLinesFill />
               </div>

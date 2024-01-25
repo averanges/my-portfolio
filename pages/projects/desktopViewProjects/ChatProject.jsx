@@ -19,9 +19,9 @@ const ChatProject = () => {
     <motion.div initial={{opacity:0}} animate={{opacity: 1}} transition={{duration: 2}}
     className='w-full h-full flex flex-col items-center gap-10'>
             <div className='w-full md:w-[90%] h-full p-5 md:p-16 flex relative justify-end flex-col md:flex-row'>
-              <div>
+              <div >
                 <Card source={Chat} alt='chat'/>
-                <div className='w-full md:w-[60%] h-[55%] shadow-lg shadow-slate-400 absolute left-0 -z-20'/>
+                <div className='w-full md:w-[60%] h-[55%] shadow-lg shadow-slate-400 absolute left-0 -z-20 rounded-3xl'/>
               </div>
               <div className='flex justify-start flex-col items-end md:gap-5 w-full md:w-[60%]'>
                   <p className='text-sm uppercase relative tracking-widest after:bg-amber-300 after:absolute 

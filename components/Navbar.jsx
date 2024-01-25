@@ -37,7 +37,7 @@ const Navbar = () => {
       style={{ backgroundColor: 'white' }}
       className={
         shadow
-          ? 'fixed w-full h-20 shadow-xl z-[10] ease-in-out duration-300'
+          ? 'fixed w-full h-20 shadow-md shadow-slate-200 z-[10] ease-in-out duration-300'
           : 'fixed w-full h-20 z-[10]'
       }
     >
@@ -57,7 +57,7 @@ const Navbar = () => {
         <div>
           <ul style={{ color: `${linkColor}` }} className='hidden md:flex gap-10 items-center'>
             <Navlinks/>
-            <Link href='resume'
+            <Link href='https://open-dawn-7be.notion.site/Nikolai-Belichenko-427b3e525b0444a780070a40e151729a?pvs=4'
              className="relative px-4 py-2 bg-gradient-to-r from-amber-300 via-amber-300 to-yellow-500 font-medium rounded-xl
              text-white transition-all duration-500 border-b-4 border-transparent hover:border-white shadow-md hover:shadow-xl shadow-slate-400">
               {resume[lang]}
@@ -121,7 +121,7 @@ const Navbar = () => {
                     <AiOutlineMail />
                   </div>
                 </Link>
-                <Link href='/resume'>
+                <Link href='https://open-dawn-7be.notion.site/Nikolai-Belichenko-427b3e525b0444a780070a40e151729a?pvs=4'>
                   <div
                     onClick={() => setNav(!nav)}
                     className='rounded-full shadow-lg shadow-gray-400 hover:bg-amber-200 hover:shadow-amber-500 p-3 cursor-pointer hover:scale-110 ease-in duration-300'
