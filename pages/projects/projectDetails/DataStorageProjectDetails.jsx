@@ -26,13 +26,13 @@ const DataStorageProjectDetails = () => {
   return (
     <div className='flex justify-between mt-24 w-[90%] h-[80%] mb-20'>
         <div className='w-[40%] h-full flex flex-col gap-10'>
-        <h2 className='bg-clip-text text-transparent bg-gradient-to-r from-amber-300 via-amber-100 to-slate-200 w-fit text-5xl'>K-Cloud</h2>
+        <h2 className='bg-clip-text text-transparent bg-gradient-to-r from-amber-300 to-slate-200 w-fit text-5xl tracking-widest'>K-Cloud</h2>
         <div className='flex w-full gap-5'>
             <span className='bg-amber-500 shadow-inner rounded-xl px-3 py-1 text-white uppercase'>In Progress</span>
             <span className='bg-amber-200 shadow-inner rounded-xl px-3 py-1 text-white'>{extraData.solo[lang]}</span>
             <span className='bg-amber-200 shadow-inner rounded-xl px-3 py-1 text-white'>{extraData.side[lang]}</span>
         </div>
-        <p className='text-slate-800 text-left'>{dataStorageProjectSubDescr[lang]}</p>
+        <p className='text-slate-800 text-left '>{dataStorageProjectSubDescr[lang]}</p>
         <div className='grid grid-cols-2 w-fit gap-10'>
             {imageData}
         </div>

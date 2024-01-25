@@ -10,6 +10,9 @@ import LeftButton from '../ui/LeftButton';
 import RightButton from '../ui/RightButton';
 import DataStorageProject from '../desktopViewProjects/DataStorageProject';
 import DataStorageProjectDetails from '../projectDetails/DataStorageProjectDetails';
+import ChatProjectDetails from '../projectDetails/ChatProjectDetails';
+import ShopProjectDetails from '../projectDetails/ShopProjectDetails';
+import PortfolioProjectDetails from '../projectDetails/PortfolioProjectDetails';
 
 const ProjectsComponent = () => { 
   const [projectInView, setProjectInView] = useState(0)
@@ -17,6 +20,7 @@ const ProjectsComponent = () => {
   const [downArrow,setDownArrow] = useState(false)
   const [scrollY, setScrollY] = useState(null)
   const projects = [<ChatProject key={0}/>,<ShopProject key={1}/>,<DataStorageProject key={2}/> , <PortfolioProject key={3} />]
+  const projectsDetailsArr = [<ChatProjectDetails key={0}/>,<ShopProjectDetails key={1}/>,<DataStorageProjectDetails key={2}/> , <PortfolioProjectDetails key={3} />]
 
   useEffect(() => {
     if(window) {
@@ -86,7 +90,7 @@ const ProjectsComponent = () => {
       <div
         className="hidden w-full h-screen bg-slate-50 absolute top-0 md:flex justify-center items-end text-slate-800"
         style={{ transform: `translateY(${scrollY}px)`}}>
-          <DataStorageProjectDetails/>
+          {projectsDetailsArr[projectInView]}
         </div>
     </div>
   );

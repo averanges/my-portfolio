@@ -19,12 +19,19 @@ const Popup = dynamic(
   {
     ssr: false,
   }
-)
-
+);
+const Marker = dynamic(
+  () => import("react-leaflet").then((module) => module.Marker),
+  {
+    ssr: false,
+  }
+);
 const MapComponent = () => {
+  const position = [37.6401, 127.2150];
+
   return (
     <MapContainer
-      center={[37.6401, 127.2150]}
+      center={position}
       zoom={8}
       style={{ width: "100%", height: "91%" }}
     >
@@ -32,6 +39,9 @@ const MapComponent = () => {
         url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
         attribution='&copy;OpenStreetMap, &copy;CartoDB'
       />
+      <div>
+
+      </div>
     </MapContainer>
   );
 };
